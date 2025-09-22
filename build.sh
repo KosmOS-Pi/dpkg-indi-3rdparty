@@ -46,5 +46,5 @@ done
 popd #indi-3rdparty
 
 # move packages outside
-mv *.dev ../
+mv *.deb ../
 
