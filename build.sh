@@ -3,9 +3,9 @@
 # exit on error
 set -e
 
-git clone --revision=v2.1.5 --depth 50 https://github.com/indilib/indi-3rdparty.git
+#git clone --revision=v2.1.5 --depth 50 https://github.com/indilib/indi-3rdparty.git
+git clone --branch=v2.1.5 --depth 1 https://github.com/indilib/indi-3rdparty.git
 pushd indi-3rdparty
-git checkout v2.1.5
 
 BUILD=../
 
