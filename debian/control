@@ -2,7 +2,7 @@ Source: indi-3rdparty
 Section: misc
 Priority: optional
 Maintainer: Matteo Piscitelli <matteo@matteopiscitelli.it>
-Build-Depends: cmake, debhelper-compat (= 13), cdbs, libindi-dev, libftdi1-dev, libcurl4-gnutls-dev, libusb-1.0-0-dev, libraw1394-dev, doxygen, libdbus-1-dev, libexif-dev (>= 0.5.9), libgd-dev, libgpmg1-dev, libjpeg-dev, libxml2-dev, rdfind, symlinks, libpigpiod-if-dev, libpigpiod-if2-1, libusb-dev
+Build-Depends: cmake, debhelper-compat (= 13), cdbs, libindi-dev, libftdi1-dev, libcurl4-gnutls-dev, libusb-1.0-0-dev, libraw1394-dev, doxygen, libdbus-1-dev, libexif-dev, libgd-dev, libgpm-dev, libjpeg-dev, libxml2-dev, rdfind, symlinks, libpigpiod-if-dev, libpigpiod-if2-1, libusb-dev
 Standards-Version: 4.5.1
 Homepage: https://gitea.nouspiro.space/nou/libXISF.git
 Rules-Requires-Root: no
