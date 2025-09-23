@@ -26,7 +26,8 @@ for lib in $LIBS; do
     fakeroot debian/rules binary
     popd
     pushd $BUILD
-    sudo dpkg -i ${lib}_*.deb
+    sudo dpkg -i *.deb || sudo apt -f install -y
+    mv *.deb ../ #move just compiled packages to dest
     popd
 done
 
@@ -41,10 +42,9 @@ for drv in $DRVS; do
     chmod 755 debian/rules
     fakeroot debian/rules binary
     popd
+    pushd $BUILD
+    mv *.deb ../ #move just compiled packages to dest
+    popd
 done
 
 popd #indi-3rdparty
-
-# move packages outside
-mv *.deb ../
-
