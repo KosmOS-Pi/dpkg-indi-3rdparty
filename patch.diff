@@ -10,3 +10,12 @@ index 1beee1e..3789a74 100644
 -.
 -This package contains debug symbols.
 +Description: Finger Lakes Instruments (FLI) debug symbols. This package contains debug symbols.
+diff --git a/debian/libpigpiod/libpigpiod.install b/debian/libpigpiod/libpigpiod.install
+deleted file mode 100644
+index 9c8591a..0000000
+--- a/debian/libpigpiod/libpigpiod.install
++++ /dev/null
+@@ -1,3 +0,0 @@
+-usr/bin
+-usr/include
+-usr/lib/systemd/system
