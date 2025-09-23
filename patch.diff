@@ -1,0 +1,12 @@
+diff --git a/debian/libfli/control b/debian/libfli/control
+index 1beee1e..3789a74 100644
+--- a/debian/libfli/control
++++ b/debian/libfli/control
+@@ -30,6 +30,4 @@ Priority: extra
+ Section: debug
+ Architecture: any
+ Depends: libfli2 (= ${binary:Version}), ${misc:Depends}
+-Description: Finger Lakes Instruments (FLI) debug symbols.
+-.
+-This package contains debug symbols.
++Description: Finger Lakes Instruments (FLI) debug symbols. This package contains debug symbols.

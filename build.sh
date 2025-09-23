@@ -7,6 +7,8 @@ set -e
 git clone --branch=v2.1.5 --depth 1 https://github.com/indilib/indi-3rdparty.git
 pushd indi-3rdparty
 
+[ -f ../patch.diff ] && patch -p1 < ../patch.diff
+
 BUILD=../
 
 LIBS=$( ls -d lib* )
