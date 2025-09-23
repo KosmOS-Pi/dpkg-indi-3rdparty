@@ -29,6 +29,7 @@ for lib in $LIBS; do
     cp -r $lib $BUILD/deb-$lib
     cp -r debian/$lib $BUILD/deb-$lib/debian
     cp -r cmake_modules $BUILD/deb-$lib/
+    cp -r cmake_modules $BUILD/deb-$lib/$lib/
     pushd $BUILD/deb-$lib
     #dpkg-buildpackage -uc -us -b || { echo "Failed building $lib."; exit 1; }
     chmod 755 debian/rules
@@ -49,6 +50,7 @@ for drv in $DRVS; do
     cp -r $drv $BUILD/deb-$drv
     cp -r debian/$drv $BUILD/deb-$drv/debian
     cp -r cmake_modules $BUILD/deb-$drv/
+    cp -r cmake_modules $BUILD/deb-$drv/$drv/
     pushd $BUILD/deb-$drv
     #dpkg-buildpackage -uc -us -b || { echo "Failed building $lib."; exit 1; }
     chmod 755 debian/rules
