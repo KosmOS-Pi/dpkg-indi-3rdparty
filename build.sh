@@ -3,6 +3,10 @@
 # exit on error
 set -e
 
+BLACKLIST=
+
+[ -f blacklist.lst ] && BLACKLIST=$( cat blacklist.lst )
+
 #git clone --revision=v2.1.5 --depth 50 https://github.com/indilib/indi-3rdparty.git
 git clone --branch=v2.1.5 --depth 1 https://github.com/indilib/indi-3rdparty.git
 pushd indi-3rdparty
@@ -17,6 +21,9 @@ DRVS=$( ls -d indi* )
 mkdir -p $BUILD
 
 for lib in $LIBS; do
+    for b in $BLACKLIST; do
+        [ "$b" = "$lib" ] && continue 2 #skip blacklisted lib
+    done
     [ -d $BUILD/deb-$lib ] && rm -rf $BUILD/deb-$lib
     mkdir $BUILD/deb-$lib
     cp -r $lib $BUILD/deb-$lib
@@ -34,6 +41,9 @@ for lib in $LIBS; do
 done
 
 for drv in $DRVS; do
+    for b in $BLACKLIST; do
+        [ "$b" = "$drv" ] && continue 2 #skip blacklisted drv
+    done
     [ -d $BUILD/deb-$drv ] && rm -rf $BUILD/deb-$drv
     mkdir $BUILD/deb-$drv
     cp -r $drv $BUILD/deb-$drv
