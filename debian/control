@@ -2,7 +2,7 @@ Source: indi-3rdparty
 Section: misc
 Priority: optional
 Maintainer: Matteo Piscitelli <matteo@matteopiscitelli.it>
-Build-Depends: cmake, debhelper-compat (= 13), cdbs, libindi-dev, libftdi1-dev, libcurl4-gnutls-dev, libusb-1.0-0-dev, libraw1394-dev, doxygen, libdbus-1-dev, libexif-dev, libgd-dev, libgpm-dev, libjpeg-dev, libxml2-dev, rdfind, symlinks, libpigpiod-if-dev, libpigpiod-if2-1, libusb-dev, libzmq3-dev, libnova-dev, libahp-gt-dev, libdc1394-dev,   libfishcamp-dev, libfli-dev, libaravis-dev, libgphoto2-dev, libraw-dev, libgpiod-dev, libgps-dev, libcamera-dev, libboost-program-options-dev, liblimesuite-dev, libnutclient-dev, libavcodec-dev, libavdevice-dev, libavformat-dev, libavutil-dev, libswscale-dev, extra-cmake-modules, libkf5config-dev, libkf5i18n-dev, python3-pip
+Build-Depends: cmake, debhelper-compat (= 13), cdbs, libindi-dev, libftdi1-dev, libcurl4-gnutls-dev, libusb-1.0-0-dev, libraw1394-dev, doxygen, libdbus-1-dev, libexif-dev, libgd-dev, libgpm-dev, libjpeg-dev, libxml2-dev, rdfind, symlinks, libpigpiod-if-dev, libpigpiod-if2-1, libusb-dev, libzmq3-dev, libnova-dev, libahp-gt-dev, libdc1394-dev,   libfishcamp-dev, libfli-dev, libaravis-dev, libgphoto2-dev, libraw-dev, libgpiod-dev, libgps-dev, libcamera-dev, libboost-program-options-dev, liblimesuite-dev, libnutclient-dev, libavcodec-dev, libavdevice-dev, libavformat-dev, libavutil-dev, libswscale-dev, extra-cmake-modules, libkf5config-dev, libkf5i18n-dev, python3-pip, rpicam-apps, googletest, libgmock-dev
 Standards-Version: 4.5.1
 Homepage: https://gitea.nouspiro.space/nou/libXISF.git
 Rules-Requires-Root: no
