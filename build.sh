@@ -24,6 +24,7 @@ for lib in $LIBS; do
     for b in $BLACKLIST; do
         [ "$b" = "$lib" ] && continue 2 #skip blacklisted lib
     done
+    echo "############################# $lib ##############################"
     [ -d $BUILD/deb-$lib ] && rm -rf $BUILD/deb-$lib
     mkdir $BUILD/deb-$lib
     cp -r $lib $BUILD/deb-$lib
@@ -45,6 +46,7 @@ for drv in $DRVS; do
     for b in $BLACKLIST; do
         [ "$b" = "$drv" ] && continue 2 #skip blacklisted drv
     done
+    echo "############################# $drv ##############################"
     [ -d $BUILD/deb-$drv ] && rm -rf $BUILD/deb-$drv
     mkdir $BUILD/deb-$drv
     cp -r $drv $BUILD/deb-$drv
