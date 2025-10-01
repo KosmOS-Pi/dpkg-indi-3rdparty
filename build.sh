@@ -12,8 +12,8 @@ BLACKLIST=
 # enter source folder
 pushd indi-3rdparty
 
-# apply our patches
-[ -f ../patch.diff ] && patch -p1 < ../patch.diff
+# Call script to apply patches
+../apply-patches.sh
 
 # get packages lists
 LIBS=$( ls -d lib* )
