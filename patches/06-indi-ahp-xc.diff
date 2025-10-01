@@ -1,0 +1,13 @@
+diff --git a/debian/indi-ahp-xc/control b/debian/indi-ahp-xc/control
+index 20e6154..6d3f185 100644
+--- a/debian/indi-ahp-xc/control
++++ b/debian/indi-ahp-xc/control
+@@ -2,7 +2,7 @@ Source: indi-ahp-xc
+ Section: science
+ Priority: extra
+ Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+-Build-Depends: debhelper (>= 5), cdbs, cmake, libusb-1.0-0-dev, libcfitsio-dev, libindi-dev, zlib1g-dev, libnova-dev
++Build-Depends: debhelper (>= 5), cdbs, cmake, libusb-1.0-0-dev, libcfitsio-dev, libindi-dev, zlib1g-dev, libnova-dev, libahp-xc
+ Standards-Version: 3.9.2
+ 
+ Package: indi-ahp-xc
