@@ -34,7 +34,7 @@ if [ -f debian/control ]; then
 fi
 
 if [ "$TOINST" ]; then
-    sudo apt install --yes $TOINST
+    sudo apt-get -y install $TOINST
 else
     echo ">>>>> Nothing to be installed"
 fi
@@ -47,7 +47,7 @@ fakeroot debian/rules binary
 popd
 
 if [ "$2" = "install" ]; then
-    sudo dpkg -i *.deb || sudo apt -f install -y
+    sudo dpkg -i *.deb || sudo apt-get -f install -y
 fi
 
 #move just compiled packages to parent dir
