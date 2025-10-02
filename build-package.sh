@@ -29,7 +29,11 @@ TOINST=''
 echo ">>>>> Checking deps for $PKG"
 if [ -f debian/control ]; then
     for DEP in $( dpkg-checkbuilddeps debian/control 2>&1 | cut -d: -f4 ); do
-        TOINST="$TOINST $DEP"
+        # add only if it's available
+        [ "$DEP" = "|" ] && continue
+        if apt-cache show $DEP > /dev/null 2>&1; then
+            TOINST="$TOINST $DEP"
+        fi
     done
 fi
 
