@@ -1,0 +1,14 @@
+diff --git a/debian/indi-ticfocuser-ng/control b/debian/indi-ticfocuser-ng/control
+index d2a7a1b..fe6a81d 100644
+--- a/debian/indi-ticfocuser-ng/control
++++ b/debian/indi-ticfocuser-ng/control
+@@ -11,7 +11,8 @@ Build-Depends: debhelper (>= 9),
+                zlib1g-dev,
+                libnova-dev,
+                libusb-1.0-0-dev,
+-               libbluetooth-dev
++               libbluetooth-dev,
++               libudev-dev
+ Standards-Version: 3.9.4
+ 
+ Package: indi-ticfocuser-ng
