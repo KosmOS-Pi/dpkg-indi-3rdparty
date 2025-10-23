@@ -1,0 +1,906 @@
+diff --git a/debian/indi-aagcloudwatcher-ng/changelog b/debian/indi-aagcloudwatcher-ng/changelog
+index 2410de1..45c5a06 100644
+--- a/debian/indi-aagcloudwatcher-ng/changelog
++++ b/debian/indi-aagcloudwatcher-ng/changelog
+@@ -1,4 +1,4 @@
+-indi-aagcloudwatcher-ng (1.7) focal; urgency=medium
++indi-aagcloudwatcher-ng (2:1.7-1) focal; urgency=medium
+ 
+   * Added Debug Output
+   * Handling Devices with Firmware >= 5.8 but no humidity and pressure sensor
+diff --git a/debian/indi-aagcloudwatcher/changelog b/debian/indi-aagcloudwatcher/changelog
+index a2ae0b0..0ba8c73 100644
+--- a/debian/indi-aagcloudwatcher/changelog
++++ b/debian/indi-aagcloudwatcher/changelog
+@@ -1,4 +1,4 @@
+-indi-aagcloudwatcher (1.4) bionic; urgency=medium
++indi-aagcloudwatcher (2:1.4-1) bionic; urgency=medium
+ 
+   * New release
+ 
+diff --git a/debian/indi-ahp-xc/changelog b/debian/indi-ahp-xc/changelog
+index 8699f0c..6a5e25c 100644
+--- a/debian/indi-ahp-xc/changelog
++++ b/debian/indi-ahp-xc/changelog
+@@ -1,4 +1,4 @@
+-indi-ahp-xc (0.3) bionic; urgency=medium
++indi-ahp-xc (2:0.3-1) bionic; urgency=medium
+ 
+   * Upstream update
+ 
+diff --git a/debian/indi-aok/changelog b/debian/indi-aok/changelog
+index f9d8a5d..e939d3b 100644
+--- a/debian/indi-aok/changelog
++++ b/debian/indi-aok/changelog
+@@ -1,4 +1,4 @@
+-indi-aok (2.0) bionic; urgency=low
++indi-aok (2:2.0-1) bionic; urgency=low
+   * cleaned up structure of source code
+   * improved documentation and parser for JSON response
+   * added lunar tracking mode
+diff --git a/debian/indi-apogee/changelog b/debian/indi-apogee/changelog
+index 96c8153..556c692 100644
+--- a/debian/indi-apogee/changelog
++++ b/debian/indi-apogee/changelog
+@@ -1,4 +1,4 @@
+-indi-apogee (1.9) bionic; urgency=low
++indi-apogee (2:1.9-1) bionic; urgency=low
+ 
+   * Fixed fan control.
+ 
+diff --git a/debian/indi-armadillo-platypus/changelog b/debian/indi-armadillo-platypus/changelog
+index 236dfe9..ff6ed7e 100644
+--- a/debian/indi-armadillo-platypus/changelog
++++ b/debian/indi-armadillo-platypus/changelog
+@@ -1,4 +1,4 @@
+-indi-armadillo-platypus (1.0) bionic; urgency=low
++indi-armadillo-platypus (2:1.0-1) bionic; urgency=low
+ 
+   * Initial Release.
+ 
+diff --git a/debian/indi-asi-power/changelog b/debian/indi-asi-power/changelog
+index baef4d6..3fb57b2 100644
+--- a/debian/indi-asi-power/changelog
++++ b/debian/indi-asi-power/changelog
+@@ -1,4 +1,4 @@
+-indi-asi-power (0.95) buster; urgency=medium
++indi-asi-power (2:0.95-1) buster; urgency=medium
+ 
+   * Replace pigpio timer with INDI timer
+ 
+diff --git a/debian/indi-asi/changelog b/debian/indi-asi/changelog
+index 6eb0e8c..58a0ea9 100644
+--- a/debian/indi-asi/changelog
++++ b/debian/indi-asi/changelog
+@@ -1,4 +1,4 @@
+-indi-asi (2.6) jammy; urgency=medium
++indi-asi (2:2.6-1) jammy; urgency=medium
+ 
+   * USB reset on timeout is now configurable.
+   * Added camera stress test.
+diff --git a/debian/indi-astarbox/changelog b/debian/indi-astarbox/changelog
+index e6d3cb6..8ca0e1a 100644
+--- a/debian/indi-astarbox/changelog
++++ b/debian/indi-astarbox/changelog
+@@ -1,4 +1,4 @@
+-indi-astarbox (1.0) buster; urgency=medium
++indi-astarbox (2:1.0-1) buster; urgency=medium
+ 
+   * all - Initial release of astarbox driver
+ 
+diff --git a/debian/indi-astroasis/changelog b/debian/indi-astroasis/changelog
+index 5e4ecee..a49a0aa 100644
+--- a/debian/indi-astroasis/changelog
++++ b/debian/indi-astroasis/changelog
+@@ -1,4 +1,4 @@
+-indi-astroasis (1.1) jammy; urgency=medium
++indi-astroasis (2:1.1-1) jammy; urgency=medium
+ 
+     * Add Oasis Filter Wheel driver.
+     * Update compilation and installation instructions.
+diff --git a/debian/indi-atik/changelog b/debian/indi-atik/changelog
+index 51cff74..9e85c61 100644
+--- a/debian/indi-atik/changelog
++++ b/debian/indi-atik/changelog
+@@ -1,4 +1,4 @@
+-indi-atik (3.0) jammy; urgency=low
++indi-atik (2:3.0-1) jammy; urgency=low
+ 
+   * Define filter driver interface if filter wheel is detected.
+ 
+diff --git a/debian/indi-avalon/changelog b/debian/indi-avalon/changelog
+index b3d4c77..bed472f 100644
+--- a/debian/indi-avalon/changelog
++++ b/debian/indi-avalon/changelog
+@@ -1,4 +1,4 @@
+-indi-avalon (1.14) UNRELEASED; urgency=medium
++indi-avalon (2:1.14-1) UNRELEASED; urgency=medium
+ 
+   * Automatic tracking adjustment implemented
+ 
+diff --git a/debian/indi-avalonud/changelog b/debian/indi-avalonud/changelog
+index bda8552..8743811 100644
+--- a/debian/indi-avalonud/changelog
++++ b/debian/indi-avalonud/changelog
+@@ -1,4 +1,4 @@
+-indi-avalonud (2.2) jammy; urgency=medium
++indi-avalonud (2:2.2-1) jammy; urgency=medium
+ 
+   * Initial release
+ 
+diff --git a/debian/indi-beefocus/changelog b/debian/indi-beefocus/changelog
+index 21884d7..af4157a 100644
+--- a/debian/indi-beefocus/changelog
++++ b/debian/indi-beefocus/changelog
+@@ -1,4 +1,4 @@
+-indi-beefocus (0.1) bionic; urgency=low
++indi-beefocus (2:0.1-1) bionic; urgency=low
+ 
+   * Initial Release
+ 
+diff --git a/debian/indi-bno-imu/changelog b/debian/indi-bno-imu/changelog
+index 605cd8b..1795e61 100644
+--- a/debian/indi-bno-imu/changelog
++++ b/debian/indi-bno-imu/changelog
+@@ -1,4 +1,4 @@
+-indi-bno-imu (0.1) bionic; urgency=low
++indi-bno-imu (2:0.1-1) bionic; urgency=low
+ 
+   * Initial Release
+ 
+diff --git a/debian/indi-bresserexos2/changelog b/debian/indi-bresserexos2/changelog
+index dcc0eb4..ab2e0a7 100644
+--- a/debian/indi-bresserexos2/changelog
++++ b/debian/indi-bresserexos2/changelog
+@@ -1,4 +1,4 @@
+-indi-bresserexos2 (1.0) bionic; urgency=medium
++indi-bresserexos2 (2:1.0-1) bionic; urgency=medium
+ 
+   * Initial Release.
+ 
+diff --git a/debian/indi-celestronaux/changelog b/debian/indi-celestronaux/changelog
+index de3f197..a67f023 100644
+--- a/debian/indi-celestronaux/changelog
++++ b/debian/indi-celestronaux/changelog
+@@ -1,4 +1,4 @@
+-indi-celestronaux (1.5) jammy; urgency=medium
++indi-celestronaux (2:1.5-1) jammy; urgency=medium
+ 
+   * Add configurable approach direction with tracking vector support
+   * Bump version to 1.5
+diff --git a/debian/indi-dsi/changelog b/debian/indi-dsi/changelog
+index dec2374..7dbd0ff 100644
+--- a/debian/indi-dsi/changelog
++++ b/debian/indi-dsi/changelog
+@@ -1,4 +1,4 @@
+-indi-dsi (0.4) bionic; urgency=medium
++indi-dsi (2:0.4-1) bionic; urgency=medium
+ 
+   * Support for DSI Color III Bayer pattern.
+ 
+diff --git a/debian/indi-duino/changelog b/debian/indi-duino/changelog
+index d4cd1b9..ae212e6 100644
+--- a/debian/indi-duino/changelog
++++ b/debian/indi-duino/changelog
+@@ -1,4 +1,4 @@
+-indi-duino (1.21) jammy; urgency=medium
++indi-duino (2:1.21-1) jammy; urgency=medium
+ 
+   * SHT30 sensor support added to weatherradio firmware
+ 
+diff --git a/debian/indi-eqmod/changelog b/debian/indi-eqmod/changelog
+index e29447b..7d8e1b1 100644
+--- a/debian/indi-eqmod/changelog
++++ b/debian/indi-eqmod/changelog
+@@ -1,4 +1,4 @@
+-indi-eqmod (1.3) bionic; urgency=medium
++indi-eqmod (2:1.3-1) bionic; urgency=medium
+ 
+   * Update homing to be in line with INDI standards
+ 
+diff --git a/debian/indi-ffmv/changelog b/debian/indi-ffmv/changelog
+index ab791e3..8089539 100644
+--- a/debian/indi-ffmv/changelog
++++ b/debian/indi-ffmv/changelog
+@@ -1,4 +1,4 @@
+-indi-ffmv (0.3) bionic; urgency=medium
++indi-ffmv (2:0.3-1) bionic; urgency=medium
+ 
+   * Add Atik GP.
+ 
+diff --git a/debian/indi-fishcamp/changelog b/debian/indi-fishcamp/changelog
+index 16c7564..1669c51 100644
+--- a/debian/indi-fishcamp/changelog
++++ b/debian/indi-fishcamp/changelog
+@@ -1,4 +1,4 @@
+-indi-fishcamp (1.1) bionic; urgency=medium
++indi-fishcamp (2:1.1-1) bionic; urgency=medium
+ 
+   * New release
+ 
+diff --git a/debian/indi-fli/changelog b/debian/indi-fli/changelog
+index 640273e..034d58b 100644
+--- a/debian/indi-fli/changelog
++++ b/debian/indi-fli/changelog
+@@ -1,4 +1,4 @@
+-indi-fli (1.5) bionic; urgency=medium
++indi-fli (2:1.5-1) bionic; urgency=medium
+ 
+   * New release
+ 
+diff --git a/debian/indi-full/changelog b/debian/indi-full/changelog
+index c7b2333..88f9c4e 100644
+--- a/debian/indi-full/changelog
++++ b/debian/indi-full/changelog
+@@ -1,4 +1,4 @@
+-indi-full (2.1.6) jammy; urgency=medium
++indi-full (2:2.1.6-1) jammy; urgency=medium
+ 
+   * Minor release.
+ 
+diff --git a/debian/indi-gige/changelog b/debian/indi-gige/changelog
+index 2ab4f32..9c4db8a 100644
+--- a/debian/indi-gige/changelog
++++ b/debian/indi-gige/changelog
+@@ -1,4 +1,4 @@
+-indi-gige (0.1) bionic; urgency=medium
++indi-gige (2:0.1-1) bionic; urgency=medium
+ 
+   * Initial release.
+ 
+diff --git a/debian/indi-gphoto/changelog b/debian/indi-gphoto/changelog
+index 9746cdb..0563d89 100644
+--- a/debian/indi-gphoto/changelog
++++ b/debian/indi-gphoto/changelog
+@@ -1,4 +1,4 @@
+-indi-gphoto (3.4) jammy; urgency=medium
++indi-gphoto (2:3.4-1) jammy; urgency=medium
+ 
+   * Added configurable timeout for download.
+ 
+diff --git a/debian/indi-gpio/changelog b/debian/indi-gpio/changelog
+old mode 100755
+new mode 100644
+index 55c08b0..8ef0f31
+--- a/debian/indi-gpio/changelog
++++ b/debian/indi-gpio/changelog
+@@ -1,4 +1,4 @@
+-indi-gpio (0.1) bullseye; urgency=medium
++indi-gpio (2:0.1-1) bullseye; urgency=medium
+ 
+   * Initial Release.
+ 
+diff --git a/debian/indi-gpsd/changelog b/debian/indi-gpsd/changelog
+index 598ecab..4d865a6 100644
+--- a/debian/indi-gpsd/changelog
++++ b/debian/indi-gpsd/changelog
+@@ -1,4 +1,4 @@
+-indi-gpsd (0.6) jammy; urgency=medium
++indi-gpsd (2:0.6-1) jammy; urgency=medium
+ 
+   * Let INDI::GPS handle setting system-wide time.
+ 
+diff --git a/debian/indi-gpsnmea/changelog b/debian/indi-gpsnmea/changelog
+index ec94bff..abdb28b 100644
+--- a/debian/indi-gpsnmea/changelog
++++ b/debian/indi-gpsnmea/changelog
+@@ -1,4 +1,4 @@
+-indi-gpsnmea (0.2) bionic; urgency=medium
++indi-gpsnmea (2:0.2-1) bionic; urgency=medium
+ 
+   * Upstream release.
+ 
+diff --git a/debian/indi-inovaplx/changelog b/debian/indi-inovaplx/changelog
+index 0ddb404..731b42b 100644
+--- a/debian/indi-inovaplx/changelog
++++ b/debian/indi-inovaplx/changelog
+@@ -1,4 +1,4 @@
+-indi-inovaplx (1.4) bionic; urgency=low
++indi-inovaplx (2:1.4-1) bionic; urgency=low
+ 
+   * New upstream version.
+ 
+diff --git a/debian/indi-libcamera/changelog b/debian/indi-libcamera/changelog
+index 13212f5..a479b4f 100644
+--- a/debian/indi-libcamera/changelog
++++ b/debian/indi-libcamera/changelog
+@@ -1,4 +1,4 @@
+-indi-libcamera (1.2) bookworm; urgency=low
++indi-libcamera (2:1.2-1) bookworm; urgency=low
+ 
+   * Updated due to librpicam-app-dev change.
+ 
+diff --git a/debian/indi-limesdr/changelog b/debian/indi-limesdr/changelog
+index af0481b..479bb4d 100644
+--- a/debian/indi-limesdr/changelog
++++ b/debian/indi-limesdr/changelog
+@@ -1,4 +1,4 @@
+-indi-limesdr (1.4) bionic; urgency=low
++indi-limesdr (2:1.4-1) bionic; urgency=low
+ 
+   * New upstream version.
+ 
+diff --git a/debian/indi-maxdomeii/changelog b/debian/indi-maxdomeii/changelog
+index f453d5e..32fdcef 100644
+--- a/debian/indi-maxdomeii/changelog
++++ b/debian/indi-maxdomeii/changelog
+@@ -1,4 +1,4 @@
+-indi-maxdomeii (1.3) bionic; urgency=low
++indi-maxdomeii (2:1.3-1) bionic; urgency=low
+ 
+   * New release
+ 
+diff --git a/debian/indi-mgen/changelog b/debian/indi-mgen/changelog
+index 0bf7ae2..c665119 100644
+--- a/debian/indi-mgen/changelog
++++ b/debian/indi-mgen/changelog
+@@ -1,4 +1,4 @@
+-indi-mgen (0.1) bionic; urgency=medium
++indi-mgen (2:0.1-1) bionic; urgency=medium
+ 
+   * Upstream release.
+ 
+diff --git a/debian/indi-mi/changelog b/debian/indi-mi/changelog
+index d894fb2..936a232 100644
+--- a/debian/indi-mi/changelog
++++ b/debian/indi-mi/changelog
+@@ -1,4 +1,4 @@
+-indi-mi (2.2) buster; urgency=low
++indi-mi (2:2.2-1) buster; urgency=low
+ 
+   * Fix small bug where some cameras did not correctly update gain
+ 
+diff --git a/debian/indi-nexdome/changelog b/debian/indi-nexdome/changelog
+index ce79da6..eb8615e 100644
+--- a/debian/indi-nexdome/changelog
++++ b/debian/indi-nexdome/changelog
+@@ -1,4 +1,4 @@
+-indi-nexdome (1.5) bionic; urgency=medium
++indi-nexdome (2:1.5-1) bionic; urgency=medium
+ 
+   * Fix shutter handling.
+ 
+diff --git a/debian/indi-nexstarevo/changelog b/debian/indi-nexstarevo/changelog
+index d5757a8..080c083 100644
+--- a/debian/indi-nexstarevo/changelog
++++ b/debian/indi-nexstarevo/changelog
+@@ -1,4 +1,4 @@
+-indi-nexstarevo (0.4) bionic; urgency=medium
++indi-nexstarevo (2:0.4-1) bionic; urgency=medium
+ 
+   * New release
+ 
+diff --git a/debian/indi-nightscape/changelog b/debian/indi-nightscape/changelog
+index 294581c..3902fb6 100644
+--- a/debian/indi-nightscape/changelog
++++ b/debian/indi-nightscape/changelog
+@@ -1,4 +1,4 @@
+-indi-nightscape (1.0.6) bionic; urgency=low
++indi-nightscape (2:1.0.6-1) bionic; urgency=low
+ 
+   * Frame size updates for xxAstroJeffxx issues and new timer routine. (#144)
+ 
+diff --git a/debian/indi-nut/changelog b/debian/indi-nut/changelog
+index 1072582..0d9cf8e 100644
+--- a/debian/indi-nut/changelog
++++ b/debian/indi-nut/changelog
+@@ -1,4 +1,4 @@
+-indi-nut (1.0) jammy; urgency=low
++indi-nut (2:1.0-1) jammy; urgency=low
+ 
+   * Initial Release.
+ 
+diff --git a/debian/indi-ocs/changelog b/debian/indi-ocs/changelog
+index 8fdf7f1..22d2b05 100644
+--- a/debian/indi-ocs/changelog
++++ b/debian/indi-ocs/changelog
+@@ -1,4 +1,4 @@
+-indi-ocs (1.4) nobel; urgency=medium
++indi-ocs (2:1.4-1) nobel; urgency=medium
+ 
+   * New release - Corrected inactive weather measurement check added incorrectly in V1.1
+ 
+diff --git a/debian/indi-openogma/changelog b/debian/indi-openogma/changelog
+index ca007de..68207dc 100644
+--- a/debian/indi-openogma/changelog
++++ b/debian/indi-openogma/changelog
+@@ -1,4 +1,4 @@
+-indi-openogma (1.2) noble; urgency=medium
++indi-openogma (2:1.2-1) noble; urgency=medium
+ 
+   * Initial release.
+ 
+diff --git a/debian/indi-orion-ssg3/changelog b/debian/indi-orion-ssg3/changelog
+index 6f7f10c..b9a12b6 100644
+--- a/debian/indi-orion-ssg3/changelog
++++ b/debian/indi-orion-ssg3/changelog
+@@ -1,4 +1,4 @@
+-indi-orion-ssg3 (0.1) focal; urgency=medium
++indi-orion-ssg3 (2:0.1-1) focal; urgency=medium
+ 
+   * Initial release 
+ 
+diff --git a/debian/indi-pentax/changelog b/debian/indi-pentax/changelog
+index 216fb56..cf97c04 100644
+--- a/debian/indi-pentax/changelog
++++ b/debian/indi-pentax/changelog
+@@ -1,4 +1,4 @@
+-indi-pentax (1.1) jammy; urgency=low
++indi-pentax (2:1.1-1) jammy; urgency=low
+ 
+   [ Dmitriy Galamaga]
+   * Fixed permissions: on a modern systems driver requires cap_sys_rawio
+diff --git a/debian/indi-playerone/changelog b/debian/indi-playerone/changelog
+index 9167d6e..73ad6d2 100644
+--- a/debian/indi-playerone/changelog
++++ b/debian/indi-playerone/changelog
+@@ -1,4 +1,4 @@
+-indi-playerone (1.20) bionic; urgency=low
++indi-playerone (2:1.20-1) bionic; urgency=low
+ 
+   * Update PlayerOneCamera SDK v3.9.0
+ 
+diff --git a/debian/indi-qhy/changelog b/debian/indi-qhy/changelog
+index f7b7e8e..c333a8c 100644
+--- a/debian/indi-qhy/changelog
++++ b/debian/indi-qhy/changelog
+@@ -1,4 +1,4 @@
+-indi-qhy (2.7) bionic; urgency=medium
++indi-qhy (2:2.7-1) bionic; urgency=medium
+ 
+   * Adding support to GPS.
+ 
+diff --git a/debian/indi-qsi/changelog b/debian/indi-qsi/changelog
+index c7ef22b..de4de51 100644
+--- a/debian/indi-qsi/changelog
++++ b/debian/indi-qsi/changelog
+@@ -1,4 +1,4 @@
+-indi-qsi (0.9) bionic; urgency=medium
++indi-qsi (2:0.9-1) bionic; urgency=medium
+ 
+   * New release
+ 
+diff --git a/debian/indi-rolloffino/changelog b/debian/indi-rolloffino/changelog
+index 845e710..4de3c2d 100644
+--- a/debian/indi-rolloffino/changelog
++++ b/debian/indi-rolloffino/changelog
+@@ -1,4 +1,4 @@
+-indi-rolloffino (1.3) jammy; urgency=low
++indi-rolloffino (2:1.3-1) jammy; urgency=low
+ 
+   * Rolloffino:  Arduino sketches
+ 
+diff --git a/debian/indi-rpi-gpio/changelog b/debian/indi-rpi-gpio/changelog
+old mode 100755
+new mode 100644
+index b0568fc..9074d81
+--- a/debian/indi-rpi-gpio/changelog
++++ b/debian/indi-rpi-gpio/changelog
+@@ -1,4 +1,4 @@
+-indi-rpi-gpio (0.4) buster; urgency=medium
++indi-rpi-gpio (2:0.4-1) buster; urgency=medium
+ 
+   * Replace pigpio timer with INDI timer
+ 
+diff --git a/debian/indi-rpicam/changelog b/debian/indi-rpicam/changelog
+index ad3d4c3..9d2045d 100644
+--- a/debian/indi-rpicam/changelog
++++ b/debian/indi-rpicam/changelog
+@@ -1,4 +1,4 @@
+-indi-rpicam (1.4) stable; urgency=low
++indi-rpicam (2:1.4-1) stable; urgency=low
+ 
+   * Corrected colors
+   * Long exposures more stable 
+diff --git a/debian/indi-rtklib/changelog b/debian/indi-rtklib/changelog
+index f517aac..4b620ce 100644
+--- a/debian/indi-rtklib/changelog
++++ b/debian/indi-rtklib/changelog
+@@ -1,4 +1,4 @@
+-indi-rtklib (1.0) bionic; urgency=medium
++indi-rtklib (2:1.0-1) bionic; urgency=medium
+ 
+   * Upstream update
+ 
+diff --git a/debian/indi-sbig/changelog b/debian/indi-sbig/changelog
+index c93ae26..6da382e 100644
+--- a/debian/indi-sbig/changelog
++++ b/debian/indi-sbig/changelog
+@@ -1,4 +1,4 @@
+-indi-sbig (2.1) bionic; urgency=medium
++indi-sbig (2:2.1-1) bionic; urgency=medium
+ 
+   * Added AO support.
+   * Fixed guiding pulses.
+diff --git a/debian/indi-shelyak/changelog b/debian/indi-shelyak/changelog
+index 10fedd2..8d08759 100644
+--- a/debian/indi-shelyak/changelog
++++ b/debian/indi-shelyak/changelog
+@@ -1,4 +1,4 @@
+-indi-shelyak (1.0) bionic; urgency=low
++indi-shelyak (2:1.0-1) bionic; urgency=low
+ 
+   * Initial Release.
+ 
+diff --git a/debian/indi-starbook-ten/changelog b/debian/indi-starbook-ten/changelog
+index 67f775d..4dfa88c 100644
+--- a/debian/indi-starbook-ten/changelog
++++ b/debian/indi-starbook-ten/changelog
+@@ -1,4 +1,4 @@
+-indi-starbook-ten (0.1) unstable; urgency=medium
++indi-starbook-ten (2:0.1-1) unstable; urgency=medium
+ 
+   * First upstream version.
+ 
+diff --git a/debian/indi-starbook/changelog b/debian/indi-starbook/changelog
+index 4181a84..993506c 100644
+--- a/debian/indi-starbook/changelog
++++ b/debian/indi-starbook/changelog
+@@ -1,4 +1,4 @@
+-indi-starbook (0.8) bionic; urgency=medium
++indi-starbook (2:0.8-1) bionic; urgency=medium
+ 
+   * Fixed location error.
+   * All responses are auto uppered cased now to avoid incompatibilities.
+diff --git a/debian/indi-svbony/changelog b/debian/indi-svbony/changelog
+index 48480df..095e19a 100644
+--- a/debian/indi-svbony/changelog
++++ b/debian/indi-svbony/changelog
+@@ -1,4 +1,4 @@
+-indi-svbony (1.4.2) bionic; urgency=low
++indi-svbony (2:1.4.2-1) bionic; urgency=low
+ 
+   * BUGFIX: SVBONYCCD: Stop cooling at disconnection
+ 
+diff --git a/debian/indi-sx/changelog b/debian/indi-sx/changelog
+index 1349e57..3fe5f63 100644
+--- a/debian/indi-sx/changelog
++++ b/debian/indi-sx/changelog
+@@ -1,4 +1,4 @@
+-indi-sx (1.16) jammy; urgency=low
++indi-sx (2:1.16-1) jammy; urgency=low
+ 
+   * Added option for unidirectional motion to SX wheels
+ 
+diff --git a/debian/indi-talon6/changelog b/debian/indi-talon6/changelog
+index 3319208..b2d8ef4 100644
+--- a/debian/indi-talon6/changelog
++++ b/debian/indi-talon6/changelog
+@@ -1,4 +1,4 @@
+-indi-talon6 (2.0) bionic; urgency=low
++indi-talon6 (2:2.0-1) bionic; urgency=low
+ 
+   * Initial Release.
+ 
+diff --git a/debian/indi-ticfocuser-ng/changelog b/debian/indi-ticfocuser-ng/changelog
+index 5d131d5..ec8257f 100644
+--- a/debian/indi-ticfocuser-ng/changelog
++++ b/debian/indi-ticfocuser-ng/changelog
+@@ -1,4 +1,4 @@
+-indi-ticfocuser-ng (1.0) jammy; urgency=low
++indi-ticfocuser-ng (2:1.0-1) jammy; urgency=low
+ 
+   * Initial release for indi-ticfocuser-ng.
+ 
+diff --git a/debian/indi-toupbase/changelog b/debian/indi-toupbase/changelog
+index d9cb138..4613990 100644
+--- a/debian/indi-toupbase/changelog
++++ b/debian/indi-toupbase/changelog
+@@ -1,4 +1,4 @@
+-indi-toupbase (2.4) jammy; urgency=low
++indi-toupbase (2:2.4-1) jammy; urgency=low
+ 
+   * Fix AAF and EFW names
+ 
+diff --git a/debian/indi-webcam/changelog b/debian/indi-webcam/changelog
+index e7467b7..95e66b7 100644
+--- a/debian/indi-webcam/changelog
++++ b/debian/indi-webcam/changelog
+@@ -1,4 +1,4 @@
+-indi-webcam (1.1) bionic; urgency=low
++indi-webcam (2:1.1-1) bionic; urgency=low
+ 
+   * Compile on recent FFMPEG 5+
+ 
+diff --git a/debian/indi-weewx-json/changelog b/debian/indi-weewx-json/changelog
+index 239da57..ff86770 100644
+--- a/debian/indi-weewx-json/changelog
++++ b/debian/indi-weewx-json/changelog
+@@ -1,4 +1,4 @@
+-indi-weewx-json (1.0) jammy; urgency=low
++indi-weewx-json (2:1.0-1) jammy; urgency=low
+ 
+   * Initial Release.
+ 
+diff --git a/debian/libahp-gt/changelog b/debian/libahp-gt/changelog
+index d38d374..ab85c06 100644
+--- a/debian/libahp-gt/changelog
++++ b/debian/libahp-gt/changelog
+@@ -1,4 +1,4 @@
+-libahp-gt (1.5.8) xenial; urgency=low
++libahp-gt (1.5.8-1) xenial; urgency=low
+ 
+    * Initial Release.
+ 
+diff --git a/debian/libaltaircam/changelog b/debian/libaltaircam/changelog
+index 742ba5a..11d90a5 100644
+--- a/debian/libaltaircam/changelog
++++ b/debian/libaltaircam/changelog
+@@ -1,4 +1,4 @@
+-libaltaircam (59.29465.20250907) jammy; urgency=medium
++libaltaircam (59.29465.20250907-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
+diff --git a/debian/libapogee/changelog b/debian/libapogee/changelog
+index dc03ef8..7dc492e 100644
+--- a/debian/libapogee/changelog
++++ b/debian/libapogee/changelog
+@@ -1,4 +1,4 @@
+-libapogee3 (3.2) bionic; urgency=low
++libapogee3 (3.2-1) bionic; urgency=low
+ 
+   * Removed libboost-regex dependency.
+ 
+diff --git a/debian/libasi/changelog b/debian/libasi/changelog
+index 89bb8c6..832b7e2 100644
+--- a/debian/libasi/changelog
++++ b/debian/libasi/changelog
+@@ -1,4 +1,4 @@
+-libasi (1.390) jammy; urgency=medium
++libasi (1.390-1) jammy; urgency=medium
+ 
+   * ASI Camera SDK 1.39 release
+ 
+diff --git a/debian/libastroasis/changelog b/debian/libastroasis/changelog
+index 78ba0a7..764f356 100644
+--- a/debian/libastroasis/changelog
++++ b/debian/libastroasis/changelog
+@@ -1,4 +1,4 @@
+-libastroasis (1.1.0) jammy; urgency=medium
++libastroasis (1.1.0-1) jammy; urgency=medium
+ 
+   * Add Oasis Filter Wheel driver library files.
+ 
+diff --git a/debian/libatik/changelog b/debian/libatik/changelog
+index 623104f..5ffd40f 100644
+--- a/debian/libatik/changelog
++++ b/debian/libatik/changelog
+@@ -1,4 +1,4 @@
+-libatik (2.2.9) bionic; urgency=medium
++libatik (2.2.9-1) bionic; urgency=medium
+ 
+   * Upstream release.
+ 
+diff --git a/debian/libbressercam/changelog b/debian/libbressercam/changelog
+index 445621f..877587e 100644
+--- a/debian/libbressercam/changelog
++++ b/debian/libbressercam/changelog
+@@ -1,4 +1,4 @@
+-libbressercam (59.29465.20250907) jammy; urgency=medium
++libbressercam (59.29465.20250907-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
+diff --git a/debian/libfishcamp/changelog b/debian/libfishcamp/changelog
+index c57192b..aaf567b 100644
+--- a/debian/libfishcamp/changelog
++++ b/debian/libfishcamp/changelog
+@@ -1,4 +1,4 @@
+-libfishcamp (1.2) jammy; urgency=low
++libfishcamp (1.2-1) jammy; urgency=low
+ 
+   * Version bump.
+ 
+diff --git a/debian/libfli/changelog b/debian/libfli/changelog
+index e3f2bc0..f50fd2a 100644
+--- a/debian/libfli/changelog
++++ b/debian/libfli/changelog
+@@ -1,4 +1,4 @@
+-libfli (2.1) jammy; urgency=medium
++libfli (2.1-1) jammy; urgency=medium
+ 
+   * Add FLI Pro for Kepler
+ 
+diff --git a/debian/libgphoto2/changelog b/debian/libgphoto2/changelog
+index 3f69672..80cd228 100644
+--- a/debian/libgphoto2/changelog
++++ b/debian/libgphoto2/changelog
+@@ -1,4 +1,4 @@
+-libgphoto2 (2.5.31) unstable; urgency=low
++libgphoto2 (2.5.31-1) unstable; urgency=low
+ 
+   * Preparing for version 2.5.31
+ 
+diff --git a/debian/libinovasdk/changelog b/debian/libinovasdk/changelog
+index 4c13035..89cbef2 100644
+--- a/debian/libinovasdk/changelog
++++ b/debian/libinovasdk/changelog
+@@ -1,4 +1,4 @@
+-libinovasdk (1.3.6) bionic; urgency=low
++libinovasdk (1.3.6-1) bionic; urgency=low
+ 
+   * Updated Release.
+ 
+diff --git a/debian/libmallincam/changelog b/debian/libmallincam/changelog
+index c45ccff..f7c269a 100644
+--- a/debian/libmallincam/changelog
++++ b/debian/libmallincam/changelog
+@@ -1,4 +1,4 @@
+-libmallincam (59.29465.20250907) jammy; urgency=medium
++libmallincam (59.29465.20250907-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
+diff --git a/debian/libmeadecam/changelog b/debian/libmeadecam/changelog
+index 716320f..969c5b0 100644
+--- a/debian/libmeadecam/changelog
++++ b/debian/libmeadecam/changelog
+@@ -1,4 +1,4 @@
+-libmeadecam (59.29465.20250907) jammy; urgency=medium
++libmeadecam (59.29465.20250907-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
+diff --git a/debian/libmicam/changelog b/debian/libmicam/changelog
+index 8158f80..daafcec 100644
+--- a/debian/libmicam/changelog
++++ b/debian/libmicam/changelog
+@@ -1,4 +1,4 @@
+-libmicam (1.4) buster; urgency=low
++libmicam (1.4-1) buster; urgency=low
+ 
+   * Updated MI library to version 0.12.0/0.11.0
+ 
+diff --git a/debian/libnncam/changelog b/debian/libnncam/changelog
+index 87a8b83..f8441c3 100644
+--- a/debian/libnncam/changelog
++++ b/debian/libnncam/changelog
+@@ -1,4 +1,4 @@
+-libnncam (59.29465.20250907) jammy; urgency=medium
++libnncam (59.29465.20250907-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
+diff --git a/debian/libogmacam/changelog b/debian/libogmacam/changelog
+index 96c3610..7b98295 100644
+--- a/debian/libogmacam/changelog
++++ b/debian/libogmacam/changelog
+@@ -1,4 +1,4 @@
+-libogmacam (59.29465.20250907) jammy; urgency=medium
++libogmacam (59.29465.20250907-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
+diff --git a/debian/libomegonprocam/changelog b/debian/libomegonprocam/changelog
+index 25fb764..e87664b 100644
+--- a/debian/libomegonprocam/changelog
++++ b/debian/libomegonprocam/changelog
+@@ -1,4 +1,4 @@
+-libomegonprocam (59.29465.20250907) jammy; urgency=medium
++libomegonprocam (59.29465.20250907-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
+diff --git a/debian/libpigpiod/changelog b/debian/libpigpiod/changelog
+old mode 100755
+new mode 100644
+index 80e9912..258a66f
+--- a/debian/libpigpiod/changelog
++++ b/debian/libpigpiod/changelog
+@@ -1,4 +1,4 @@
+-libpigpiod (0.2) buster; urgency=medium
++libpigpiod (0.2-1) buster; urgency=medium
+ 
+   * Add -m option to service to reduce CPU load
+ 
+diff --git a/debian/libpktriggercord/changelog b/debian/libpktriggercord/changelog
+index d3782e1..7455526 100644
+--- a/debian/libpktriggercord/changelog
++++ b/debian/libpktriggercord/changelog
+@@ -1,4 +1,4 @@
+-libpktriggercord (0.85.02) jammy; urgency=low
++libpktriggercord (0.85.02-1) jammy; urgency=low
+ 
+   [ Karl Rees]
+   * Fixed bad file descriptor error when MSC connection is unsuccesful
+diff --git a/debian/libplayerone/changelog b/debian/libplayerone/changelog
+index 0ce58ae..68c431f 100644
+--- a/debian/libplayerone/changelog
++++ b/debian/libplayerone/changelog
+@@ -1,4 +1,4 @@
+-libplayerone (1.16) bionic; urgency=low
++libplayerone (1.16-1) bionic; urgency=low
+ 
+   * Update PlayerOneCamera SDK to v3.9.0
+ 
+diff --git a/debian/libqhy/changelog b/debian/libqhy/changelog
+index 6e4f524..a2233b8 100644
+--- a/debian/libqhy/changelog
++++ b/debian/libqhy/changelog
+@@ -1,4 +1,4 @@
+-libqhy (25.6.3) bullseye; urgency=medium
++libqhy (25.6.3-1) bullseye; urgency=medium
+ 
+   * Upstream release.
+ 
+diff --git a/debian/libqsi/changelog b/debian/libqsi/changelog
+index 2765edd..8f6b042 100644
+--- a/debian/libqsi/changelog
++++ b/debian/libqsi/changelog
+@@ -1,4 +1,4 @@
+-libqsi (7.6.1) bionic; urgency=medium
++libqsi (7.6.1-1) bionic; urgency=medium
+ 
+   * New release
+ 
+diff --git a/debian/libricohcamerasdk/changelog b/debian/libricohcamerasdk/changelog
+index 5a7e677..6c59224 100644
+--- a/debian/libricohcamerasdk/changelog
++++ b/debian/libricohcamerasdk/changelog
+@@ -1,4 +1,4 @@
+-libricohcamerasdk (1.1.0) bionic; urgency=low
++libricohcamerasdk (1.1.0-1) bionic; urgency=low
+ 
+   * New release
+ 
+diff --git a/debian/libsbig/changelog b/debian/libsbig/changelog
+index 989e031..ba8a7b1 100644
+--- a/debian/libsbig/changelog
++++ b/debian/libsbig/changelog
+@@ -1,4 +1,4 @@
+-libsbig (4.9.9) bionic; urgency=medium
++libsbig (4.9.9-1) bionic; urgency=medium
+ 
+   * New release
+ 
+diff --git a/debian/libstarshootg/changelog b/debian/libstarshootg/changelog
+index dd8315b..cff8776 100644
+--- a/debian/libstarshootg/changelog
++++ b/debian/libstarshootg/changelog
+@@ -1,4 +1,4 @@
+-libstarshootg (59.29465.20250907) jammy; urgency=medium
++libstarshootg (59.29465.20250907-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
+diff --git a/debian/libsvbony/changelog b/debian/libsvbony/changelog
+index afc3efb..119e82e 100644
+--- a/debian/libsvbony/changelog
++++ b/debian/libsvbony/changelog
+@@ -1,4 +1,4 @@
+-libsvbony (1.13.4) bionic; urgency=low
++libsvbony (1.13.4-1) bionic; urgency=low
+ 
+   * Upgraded to upstream SVBONY SDK vers. 1.13.4 :
+   * *** Note: The following changes are from 1.13.3 to 1.13.4 ***
+diff --git a/debian/libsvbonycam/changelog b/debian/libsvbonycam/changelog
+index 14676e5..d5372e7 100644
+--- a/debian/libsvbonycam/changelog
++++ b/debian/libsvbonycam/changelog
+@@ -1,4 +1,4 @@
+-libsvbonycam (57.27591.20250122) jammy; urgency=medium
++libsvbonycam (57.27591.20250122-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
+diff --git a/debian/libtoupcam/changelog b/debian/libtoupcam/changelog
+index 53f0aa3..b272737 100644
+--- a/debian/libtoupcam/changelog
++++ b/debian/libtoupcam/changelog
+@@ -1,4 +1,4 @@
+-libtoupcam (59.29465.20250907) jammy; urgency=medium
++libtoupcam (59.29465.20250907-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
+diff --git a/debian/libtscam/changelog b/debian/libtscam/changelog
+index 7b6416d..bbff102 100644
+--- a/debian/libtscam/changelog
++++ b/debian/libtscam/changelog
+@@ -1,4 +1,4 @@
+-libtscam (59.29465.20250907) jammy; urgency=medium
++libtscam (59.29465.20250907-1) jammy; urgency=medium
+ 
+   * Upstream release
+ 
