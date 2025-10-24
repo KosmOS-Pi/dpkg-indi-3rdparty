@@ -1,9 +1,0 @@
-diff --git a/debian/libpigpiod/libpigpiod.install b/debian/libpigpiod/libpigpiod.install
-index 9c8591a..e34e861 100644
---- a/debian/libpigpiod/libpigpiod.install
-+++ b/debian/libpigpiod/libpigpiod.install
-@@ -1,3 +1,3 @@
- usr/bin
- usr/include
--usr/lib/systemd/system
-+lib/systemd/system
