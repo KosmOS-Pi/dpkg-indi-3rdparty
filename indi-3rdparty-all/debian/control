@@ -1,0 +1,125 @@
+Source: indi-3rdparty-all
+Section: metapackages
+Priority: Optional
+Maintainer: Matteo Piscitelli <matteo@matteopiscitelli.it>
+Standards-Version: 4.6.2
+Build-Depends: debhelper-compat (= 13)
+
+Package: indi-3rdparty-all
+Architecture: all
+Recommends: libindi1,
+            indi-aagcloudwatcher-ng,
+            indi-ahp-xc,
+            indi-aok,
+            indi-apogee,
+            indi-armadillo-platypus,
+            indi-asi,
+            indi-asi-power,
+            indi-astarbox,
+            indi-astroasis,
+            indi-atik,
+            indi-avalon,
+            indi-avalonud,
+            indi-beefocus,
+            indi-bin,
+            indi-bresserexos2,
+            indi-celestronaux,
+            indi-dsi,
+            indi-duino,
+            indi-eqmod,
+            indi-ffmv,
+            indi-fishcamp,
+            indi-fli,
+            indi-gige,
+            indi-gphoto,
+            indi-gpio,
+            indi-gpsd,
+            indi-gpsnmea,
+            indi-inovaplx,
+            indi-limesdr,
+            indi-maxdomeii,
+            indi-mgen,
+            indi-mi,
+            indi-nexdome,
+            indi-nightscape,
+            indi-nut,
+            indi-ocs,
+            indi-openogma,
+            indi-orion-ssg3,
+            indi-pentax,
+            indi-playerone,
+            indi-qhy,
+            indi-qsi,
+            indi-rolloffino,
+            indi-rpi-gpio,
+            indi-rtklib,
+            indi-sbig,
+            indi-shelyak,
+            indi-starbook,
+            indi-starbook-ten,
+            indi-svbony,
+            indi-sx,
+            indi-talon6,
+            indi-ticfocuser-ng,
+            indi-toupbase,
+            indi-webcam,
+            indi-weewx-json
+Description: INDI 3rd party drivers collection.
+ This metapackage installs all packages for the available INDI 3rd party
+ drivers.
+  * indi-aagcloudwatcher-ng
+  * indi-ahp-xc
+  * indi-aok
+  * indi-apogee
+  * indi-armadillo-platypus
+  * indi-asi
+  * indi-asi-power
+  * indi-astarbox
+  * indi-astroasis
+  * indi-atik
+  * indi-avalon
+  * indi-avalonud
+  * indi-beefocus
+  * indi-bin
+  * indi-bresserexos2
+  * indi-celestronaux
+  * indi-dsi
+  * indi-duino
+  * indi-eqmod
+  * indi-ffmv
+  * indi-fishcamp
+  * indi-fli
+  * indi-gige
+  * indi-gphoto
+  * indi-gpio
+  * indi-gpsd
+  * indi-gpsnmea
+  * indi-inovaplx
+  * indi-limesdr
+  * indi-maxdomeii
+  * indi-mgen
+  * indi-mi
+  * indi-nexdome
+  * indi-nightscape
+  * indi-nut
+  * indi-ocs
+  * indi-openogma
+  * indi-orion-ssg3
+  * indi-pentax
+  * indi-playerone
+  * indi-qhy
+  * indi-qsi
+  * indi-rolloffino
+  * indi-rpi-gpio
+  * indi-rtklib
+  * indi-sbig
+  * indi-shelyak
+  * indi-starbook
+  * indi-starbook-ten
+  * indi-svbony
+  * indi-sx
+  * indi-talon6
+  * indi-ticfocuser-ng
+  * indi-toupbase
+  * indi-webcam
+  * indi-weewx-json
