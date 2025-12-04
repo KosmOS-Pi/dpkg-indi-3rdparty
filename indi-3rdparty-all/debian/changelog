@@ -1,3 +1,9 @@
+indi-3rdparty-all (2.1.7.1) bookworm; urgency=medium
+
+  * Update to INDI 3rd party drivers v2.1.7.1. 
+
+ -- Matteo Piscitelli <matteo@matteopiscitelli.it>  Thu, 04 Dec 2025 11:06:00 +0000
+
 indi-3rdparty-all (2.1.6.2) bookworm; urgency=low
 
   * Update to INDI 3rd party drivers v2.1.6.2.

@@ -1,12 +1,18 @@
 diff --git a/debian/indi-playerone/changelog b/debian/indi-playerone/changelog
-index 9167d6e..08d50fb 100644
+index d756fcf..29af972 100644
 --- a/debian/indi-playerone/changelog
 +++ b/debian/indi-playerone/changelog
-@@ -2,6 +2,8 @@ indi-playerone (1.20) bionic; urgency=low
+@@ -2,10 +2,14 @@ indi-playerone (1.21) bionic; urgency=low
+ 
+   * Update PlayerOneCamera SDK v3.9.1
+ 
++ -- Hiroshi SAITO <hiro3110g@gmail.com>  Sat, 15 Nov 2025 12:00:00 +0900
++
+ indi-playerone (1.20) bionic; urgency=low
  
    * Update PlayerOneCamera SDK v3.9.0
  
-+ -- Hiroshi SAITO <hiro3110g@gmail.com>  Sat, 5 Apr 2025 12:00:00 +0900
++ -- Hiroshi SAITO <hiro3110g@gmail.com>  Fri, 5 Sep 2025 12:00:00 +0900
 +
  indi-playerone (1.19) bionic; urgency=low
  

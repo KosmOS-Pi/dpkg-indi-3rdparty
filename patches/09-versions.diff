@@ -228,16 +228,6 @@ index 640273e..034d58b 100644
  
    * New release
  
-diff --git a/debian/indi-full/changelog b/debian/indi-full/changelog
-index c7b2333..88f9c4e 100644
---- a/debian/indi-full/changelog
-+++ b/debian/indi-full/changelog
-@@ -1,4 +1,4 @@
--indi-full (2.1.6) jammy; urgency=medium
-+indi-full (2:2.1.6-1) jammy; urgency=medium
- 
-   * Minor release.
- 
 diff --git a/debian/indi-gige/changelog b/debian/indi-gige/changelog
 index 2ab4f32..9c4db8a 100644
 --- a/debian/indi-gige/changelog
@@ -431,14 +421,14 @@ index 216fb56..cf97c04 100644
    [ Dmitriy Galamaga]
    * Fixed permissions: on a modern systems driver requires cap_sys_rawio
 diff --git a/debian/indi-playerone/changelog b/debian/indi-playerone/changelog
-index 9167d6e..73ad6d2 100644
+index d756fcf..0e221d4 100644
 --- a/debian/indi-playerone/changelog
 +++ b/debian/indi-playerone/changelog
 @@ -1,4 +1,4 @@
--indi-playerone (1.20) bionic; urgency=low
-+indi-playerone (2:1.20-1) bionic; urgency=low
+-indi-playerone (1.21) bionic; urgency=low
++indi-playerone (2:1.21-1) bionic; urgency=low
  
-   * Update PlayerOneCamera SDK v3.9.0
+   * Update PlayerOneCamera SDK v3.9.1
  
 diff --git a/debian/indi-qhy/changelog b/debian/indi-qhy/changelog
 index f7b7e8e..c333a8c 100644
@@ -461,14 +451,14 @@ index c7ef22b..de4de51 100644
    * New release
  
 diff --git a/debian/indi-rolloffino/changelog b/debian/indi-rolloffino/changelog
-index 845e710..4de3c2d 100644
+index 7e8b5ef..26b15e9 100644
 --- a/debian/indi-rolloffino/changelog
 +++ b/debian/indi-rolloffino/changelog
 @@ -1,4 +1,4 @@
 -indi-rolloffino (1.3) jammy; urgency=low
-+indi-rolloffino (2:1.3-1) jammy; urgency=low
++indi-rolloffino (2:1.3-2) jammy; urgency=low
  
-   * Rolloffino:  Arduino sketches
+   * Rolloffino:  Arduino examples update, no driver changes
  
 diff --git a/debian/indi-rpi-gpio/changelog b/debian/indi-rpi-gpio/changelog
 old mode 100755
@@ -643,14 +633,14 @@ index dc03ef8..7dc492e 100644
    * Removed libboost-regex dependency.
  
 diff --git a/debian/libasi/changelog b/debian/libasi/changelog
-index 89bb8c6..832b7e2 100644
+index f2f7054..41bbf32 100644
 --- a/debian/libasi/changelog
 +++ b/debian/libasi/changelog
 @@ -1,4 +1,4 @@
--libasi (1.390) jammy; urgency=medium
-+libasi (1.390-1) jammy; urgency=medium
+-libasi (1.400) jammy; urgency=medium
++libasi (1.400-1) jammy; urgency=medium
  
-   * ASI Camera SDK 1.39 release
+   * ASI Camera SDK 1.40 release
  
 diff --git a/debian/libastroasis/changelog b/debian/libastroasis/changelog
 index 78ba0a7..764f356 100644
@@ -805,22 +795,22 @@ index d3782e1..7455526 100644
    [ Karl Rees]
    * Fixed bad file descriptor error when MSC connection is unsuccesful
 diff --git a/debian/libplayerone/changelog b/debian/libplayerone/changelog
-index 0ce58ae..68c431f 100644
+index 4fd3511..07071f7 100644
 --- a/debian/libplayerone/changelog
 +++ b/debian/libplayerone/changelog
 @@ -1,4 +1,4 @@
--libplayerone (1.16) bionic; urgency=low
-+libplayerone (1.16-1) bionic; urgency=low
+-libplayerone (1.17) bionic; urgency=low
++libplayerone (1.17-1) bionic; urgency=low
  
-   * Update PlayerOneCamera SDK to v3.9.0
+   * Update PlayerOneCamera SDK to v3.9.1
  
 diff --git a/debian/libqhy/changelog b/debian/libqhy/changelog
-index 6e4f524..a2233b8 100644
+index 48dfade..1021702 100644
 --- a/debian/libqhy/changelog
 +++ b/debian/libqhy/changelog
 @@ -1,4 +1,4 @@
--libqhy (25.6.3) bullseye; urgency=medium
-+libqhy (25.6.3-1) bullseye; urgency=medium
+-libqhy (25.10.29) bullseye; urgency=medium
++libqhy (25.10.29-1) bullseye; urgency=medium
  
    * Upstream release.
  
