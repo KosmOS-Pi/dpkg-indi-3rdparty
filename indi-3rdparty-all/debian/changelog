@@ -1,3 +1,9 @@
+indi-3rdparty-all (2.1.7.1-2) bookworm; urgency=medium
+
+  * Include indi-bnu-imu driver.
+
+ -- Matteo Piscitelli <matteo@matteopiscitelli.it>  Wed, 24 Dec 2025 00:22:43 +0000
+
 indi-3rdparty-all (2.1.7.1) bookworm; urgency=medium
 
   * Update to INDI 3rd party drivers v2.1.7.1. 
