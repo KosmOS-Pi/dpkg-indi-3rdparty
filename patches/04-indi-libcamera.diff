@@ -1,0 +1,35 @@
+diff --git a/indi-libcamera/CMakeLists.txt b/indi-libcamera/CMakeLists.txt
+index 417be76..9ca9012 100644
+--- a/indi-libcamera/CMakeLists.txt
++++ b/indi-libcamera/CMakeLists.txt
+@@ -81,3 +81,6 @@ endif (CMAKE_SYSTEM_NAME MATCHES "Linux" AND CMAKE_SYSTEM_PROCESSOR MATCHES "arm
+ 
+ install(TARGETS indi_libcamera_ccd RUNTIME DESTINATION bin)
+ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/indi_libcamera.xml DESTINATION ${INDI_DATA_DIR})
++
++set_property(TARGET indi_libcamera_ccd rpicam_test PROPERTY CXX_STANDARD 20)
++set_property(TARGET indi_libcamera_ccd rpicam_test PROPERTY CXX_STANDARD_REQUIRED ON)
+diff --git a/indi-libcamera/indi_libcamera.cpp b/indi-libcamera/indi_libcamera.cpp
+index a51eaf9..cd4281f 100644
+--- a/indi-libcamera/indi_libcamera.cpp
++++ b/indi-libcamera/indi_libcamera.cpp
+@@ -1042,14 +1042,14 @@ bool INDILibCamera::Connect()
+ 
+     if (width == 0 || height == 0)
+     {
+-        auto pas = m_ControlList.get(properties::PixelArraySize);
++        auto pas = m_ControlList.get(properties::PixelArrayActiveAreas);
+ 
+-        if (pas)
++        if (pas && !pas->empty())
+         {
+             // no idea why the IMX290 returns an uneven number of pixels, so just round down
+-            width = 2 * (pas->width / 2);
+-            height = pas->height;
+-            LOG_WARN("Negotiated stream size unavailable, falling back to PixelArraySize.");
++            width = 2 * ((*pas)[0].width / 2);
++            height = (*pas)[0].height;
++            LOG_WARN("Negotiated stream size unavailable, falling back to PixelArrayActiveAreas.");
+         }
+         else
+         {

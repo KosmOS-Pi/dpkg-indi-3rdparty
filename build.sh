@@ -3,7 +3,7 @@
 # exit on error
 set -e
 
-./download.sh v2.1.7.1
+./download.sh v2.2.5
 
 # get packages list
 PKGLIST=$( cat pkgs.conf | egrep -v '^#' )

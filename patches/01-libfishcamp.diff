@@ -1,0 +1,12 @@
+diff --git a/debian/libfishcamp/libfishcamp.install b/debian/libfishcamp/libfishcamp.install
+index 1191bdc..0953112 100644
+--- a/debian/libfishcamp/libfishcamp.install
++++ b/debian/libfishcamp/libfishcamp.install
+@@ -1,5 +1,5 @@
+ usr/lib/*/libfishcamp.so.1.1
+ usr/lib/*/libfishcamp.so.1
+-lib/firmware/gdr_usb.hex
+-lib/firmware/Guider_mono_rev16_intel.srec
++usr/lib/firmware/gdr_usb.hex
++usr/lib/firmware/Guider_mono_rev16_intel.srec
+ usr/lib/udev/rules.d/99-fishcamp.rules
