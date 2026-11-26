@@ -23,10 +23,7 @@ done
 
 popd #indi-3rdparty
 
-# build indi-3rdparty-all meta package
-pushd indi-3rdparty-all
-dpkg-buildpackage -uc -us -b
-popd
+./build-meta.sh
 
 # move packages to dest
 mv *.deb ../
