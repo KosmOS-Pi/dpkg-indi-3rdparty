@@ -26,6 +26,8 @@ Pin-Priority: 500
 EOF
 
 apt-get update
+apt-get install -y --no-install-recommends pkg-config
+
 echo "== Check pinning"
 apt-cache policy libcamera-dev librpicam-app-dev libpisp1
 apt-get -s install --no-install-recommends libcamera-dev librpicam-app-dev \
