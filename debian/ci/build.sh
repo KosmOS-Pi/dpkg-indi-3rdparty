@@ -5,7 +5,7 @@ set -e
 : "${SRC_DIR:?SRC_DIR is not set}"
 : "${OUT_DIR:?OUT_DIR is not set}"
 INDI_VERSION="${INDI_VERSION:-v2.2.5}"
-PKGS="indi-libcamera"   # test only: build just these packages
+#PKGS="indi-libcamera"   # test only: build just these packages
 RPI_FILES="$PIGEN_DIR/stage0/00-configure-apt/files"
 
 # --- Raspberry Pi OS repository (needed by indi-libcamera) ---
