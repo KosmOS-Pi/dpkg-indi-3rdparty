@@ -1,82 +1,50 @@
 #!/bin/bash
 set -e
 
-# DIAGNOSTICS ONLY: checks whether indi-libcamera needs our patch
-# when built against the Raspberry Pi OS libcamera. No .deb is produced.
-
 : "${PIGEN_DIR:?PIGEN_DIR is not set}"
 : "${SRC_DIR:?SRC_DIR is not set}"
+: "${OUT_DIR:?OUT_DIR is not set}"
 INDI_VERSION="${INDI_VERSION:-v2.2.5}"
+PKGS="indi-libcamera"   # test only: build just these packages
 RPI_FILES="$PIGEN_DIR/stage0/00-configure-apt/files"
-W=/tmp/diag
 
-# --- Raspberry Pi OS repository (no pinning yet) ---
+# --- Raspberry Pi OS repository (needed by indi-libcamera) ---
 install -m 644 "$RPI_FILES/raspberrypi-archive-keyring.pgp" /usr/share/keyrings/
 sed "s/RELEASE/trixie/g" "$RPI_FILES/raspi.sources" \
   > /etc/apt/sources.list.d/raspi.sources
-apt-get update -qq
-apt-get install -y -qq --no-install-recommends patchutils cmake build-essential pkg-config
 
-echo "== Simulated install of libcamera-dev + librpicam-app-dev"
+# Low priority for everything from Raspberry Pi OS, normal priority only for
+# the camera stack: the other build dependencies keep coming from Debian.
+cat > /etc/apt/preferences.d/raspi.pref <<'EOF'
+Package: *
+Pin: origin archive.raspberrypi.com
+Pin-Priority: 100
+
+Package: libcamera* librpicam-app* libpisp*
+Pin: origin archive.raspberrypi.com
+Pin-Priority: 500
+EOF
+
+apt-get update
+echo "== Check pinning"
+apt-cache policy libcamera-dev librpicam-app-dev libpisp1
 apt-get -s install --no-install-recommends libcamera-dev librpicam-app-dev \
   | grep -E '^(Inst|Remv|E:)' || true
 
-# --- Sources: same layout as build-package.sh ---
-mkdir -p "$W" && cd "$W"
-bash "$SRC_DIR/download.sh" "$INDI_VERSION"
-PKG=indi-libcamera
-SRC=$W/indi-3rdparty
+# --- Sources and patches ---
+cd "$SRC_DIR"
+./download.sh "$INDI_VERSION"
 
-echo "== Build dependencies of $PKG"
-cd "$W"
-mk-build-deps -i -r -t "apt-get -y --no-install-recommends" \
-  "$SRC/debian/$PKG/control"
+PKGLIST="${PKGS:-$(grep -Ev '^#' pkgs.conf)}"
 
-echo "== Installed libcamera / rpicam packages"
-dpkg-query -W -f='${Package} ${Version}\n' 'libcamera*' 'librpicam*' 'libpisp*' || true
+pushd indi-3rdparty
+../apply-patches.sh
 
-echo "== API names in the installed libcamera headers"
-grep -rnE 'PixelArraySize|PixelArrayActiveAreas' /usr/include/libcamera | head -n 10 || true
+for PKG in $PKGLIST; do
+    TOINST=
+    [ "${PKG::3}" = "lib" ] && TOINST=install
+    ../build-package.sh "$PKG" $TOINST
+done
+popd
 
-echo "== API names used by the code"
-grep -nE 'PixelArraySize|PixelArrayActiveAreas' "$SRC/$PKG/indi_libcamera.cpp" || true
-
-# --- Patch variants ---
-PATCH="$SRC_DIR/patches/04-indi-libcamera.diff"
-filterdiff -p1 --include='*CMakeLists.txt' "$PATCH" > "$W/cmake-only.diff"
-echo "== cmake-only.diff"
-cat "$W/cmake-only.diff"
-
-prepare() {  # prepare <name>
-  mkdir -p "$W/$1"
-  cp -r "$SRC/$PKG" "$W/$1/$PKG"
-  cp -r "$SRC/cmake_modules" "$W/$1/"
-  cp -r "$SRC/cmake_modules" "$W/$1/$PKG/"
-}
-
-try_build() {  # try_build <name>
-  echo "::group::variant $1"
-  if ( cd "$W/$1" \
-       && cmake -S $PKG -B b -DCMAKE_INSTALL_PREFIX=/usr > cmake.log 2>&1 \
-       && cmake --build b -j"$(nproc)" > make.log 2>&1 ); then
-    echo "RESULT $1: OK"
-  else
-    echo "RESULT $1: FAILED"
-    grep -hE 'error|Error|CMake Error' "$W/$1"/cmake.log "$W/$1"/make.log 2>/dev/null \
-      | head -n 25 || true
-  fi
-  echo "::endgroup::"
-}
-
-prepare A-nopatch
-try_build A-nopatch
-
-prepare B-cmake-only
-( cd "$W/B-cmake-only" && patch -p1 < "$W/cmake-only.diff" )
-try_build B-cmake-only
-
-prepare C-full-patch
-( cd "$W/C-full-patch" && patch -p1 < "$PATCH" )
-try_build C-full-patch
-
-echo "== Diagnostics only: stopping here"
+# indi-3rdparty-all (build-meta.sh): not handled yet, see next step.
