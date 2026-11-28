@@ -23,6 +23,8 @@ cp -r debian/$PKG $PKGDIR/debian
 cp -r cmake_modules $PKGDIR
 cp -r cmake_modules $PKGDIR/$PKG/
 
+bash ../set-version.sh "$PKG" "$PKGDIR/debian/changelog"
+
 # entering package build folder
 pushd $PKGDIR
 

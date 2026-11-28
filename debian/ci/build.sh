@@ -4,8 +4,14 @@ set -e
 : "${PIGEN_DIR:?PIGEN_DIR is not set}"
 : "${SRC_DIR:?SRC_DIR is not set}"
 : "${OUT_DIR:?OUT_DIR is not set}"
-INDI_VERSION="${INDI_VERSION:-v2.2.5}"
+
+INDI_VERSION=$(tr -d '[:space:]' < "$SRC_DIR/indi-version")
+[ -n "$INDI_VERSION" ] || { echo "indi-version is empty"; exit 1; }
+export INDI_VERSION
+export REVISIONS="$SRC_DIR/revisions.tsv"
+
 # PKGS="libfli indi-fli"   # test only: build just these packages
+
 RPI_FILES="$PIGEN_DIR/stage0/00-configure-apt/files"
 export LOCALREPO=/tmp/localrepo
 
@@ -37,7 +43,7 @@ echo "== Check pinning"
 apt-cache policy libcamera-dev librpicam-app-dev libpisp1
 
 # Tools used by the INDI build scripts but not declared in the control files.
-apt-get install -y --no-install-recommends pkg-config
+apt-get install -y --no-install-recommends pkg-config debhelper
 
 # --- Sources and patches ---
 cd "$SRC_DIR"
@@ -58,4 +64,7 @@ popd
 echo "== Installed lib packages from the local repo"
 dpkg-query -W -f='${Package} ${Version}\n' | grep -E 'lib' | grep -E '2\.[0-9]' || true
 
-# indi-3rdparty-all (build-meta.sh): not handled yet.
+echo "== Meta package"
+"$SRC_DIR/build-meta.sh"
+
+

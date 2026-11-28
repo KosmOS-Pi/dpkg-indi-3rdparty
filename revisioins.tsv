@@ -1,0 +1,2 @@
+# package <TAB> upstream version in its changelog <TAB> revision N
+# Only packages with N != 1. If the upstream version no longer matches, N is 1 again.
